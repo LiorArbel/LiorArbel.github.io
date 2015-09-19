@@ -1,0 +1,42 @@
+body {
+    background-color: #202020;
+}
+
+.controls {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    z-index: 1000;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.control {
+    margin: 10px;
+}
+
+.control label {
+    display: block;
+}
+
+.control input {
+
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 20px
+}
+
+.controls .small {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 7px;
+}

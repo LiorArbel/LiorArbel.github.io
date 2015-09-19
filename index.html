@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="controlsForm" class="controls">
+    <div class="small">drag me!</div>
+    <form onsubmit="return drawMap()">
+        <div class="control">
+            <label for="gain">gain:</label>
+            <input step="0.1" id="gain" value="2.3" type="number">
+        </div>
+        <div class="control">
+            <label for="octaves">octaves:</label>
+            <input step="1" id="octaves" value="5" type="number">
+        </div>
+        <div class="control">
+            <label for="lacunarity">lacunarity:</label>
+            <input step="0.1" id="lacunarity" value="0.4" type="number">
+        </div>
+        <div class="control">
+            <label for="frequency">frequency:</label>
+            <input step="0.1" id="frequency" value="0.4" type="number">
+        </div>
+        <div class="control-buttons">
+            <input type="submit" value="draw">
+            <input type="button" value="new seed" onclick="drawNewMap()">
+        </div>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/3.0.7/pixi.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="simplex.js"></script>
+<script src="game.js"></script>
+<script>
+    $(function() {
+        $("#controlsForm").draggable();
+    });
+</script>
+</body>
+</html>
